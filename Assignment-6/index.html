@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- daisi ui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind css cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .img:hover {
+      filter: brightness(0) saturate(100%) invert(1);
+      /* This will turn the image white */
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-slate-100" id="header-section">
+    <nav class="mt-4 flex justify-between">
+      <!-- section1 -->
+      <section class="flex items-center py-3 pl-20">
+        <h1 class="font-bold">English</h1>
+        <img src="assets/logo.png" alt="">
+        <h1 class="font-bold">জানালা</h1>
+      </section>
+      <!-- section2-->
+      <section class="flex items-center pr-20 gap-4">
+        <div>
+          <button class="btn bg-white px-3 rounded-none border border-blue-500 hover:bg-blue-500" id="faq-btn">
+            <img class="hover:bg-white" src="assets/fa-circle-question.png" alt="">
+            <h1 class="text-blue-900 font-medium  hover:text-white">FAQ</h1>
+          </button>
+        </div>
+
+        <div>
+          <button class="btn bg-white px-3 rounded-none border border-blue-500 hover:bg-blue-500" id="learn-btn">
+            <img class="hover:bg-white" src="assets/fa-book-open.png" alt="">
+            <h1 class="text-blue-900 font-medium  hover:text-white">Learn</h1>
+          </button>
+        </div>
+
+        <div>
+          <button class="btn bg-white px-3 rounded-none border border-blue-500 hover:bg-blue-500">
+            <img class="hover:bg-white" src="assets/fa-arrow-right-from-bracket.png" alt="">
+            <h1 class="text-blue-900 font-medium  hover:text-white">Logout</h1>
+          </button>
+        </div>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="banner-section"><!-- banner -->
+      <section class="flex justify-around items-center">
+        <div class="ml-8">
+          <h1 class="my-3 font-bold text-5xl"> <span class="text-[#00BCFF]">English </span>is Easy!!</h1>
+          <p class="my-3">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>আপনার দক্ষতা বাড়াতে চান,
+            আমাদের Interactive Lessons আপনাকে নিয়ে <br>যাবে অন্য একটি Level এ</p>
+          <input class="bg-slate-100 my-3 py-1" type="text" placeholder="Enter your name"><br>
+          <input class="bg-slate-100 " type="text" placeholder="........"> <br>
+          <button class="btn bg-[#422AD5] text-white px-3 my-3 py-2">Get Started</button>
+        </div>
+
+        <div>
+          <img src="assets/hero-student.png" alt="">
+        </div>
+
+      </section>
+    </section>
+
+
+    <section class="my-32" id="Voca-section"><!-- Vocabulary -->
+      <h1 class="flex items-center justify-center font-bold text-3xl mt-60 mb-20"><span class="text-[#00BCFF] ">Let's
+        </span> Learn Vocabularies</h1>
+
+      <nav id="data-container" class="flex py-5 justify-center gap-5">
+
+      </nav>
+
+       <section class=" container mx-auto grid grid-cols-4 items-center justify-center bg-slate-300 gap-4 mt-5" id="card-container">
+
+       </section>
+
+
+      <div class=" container mx-auto grid justify-center items-center bg-slate-100
+       py-20 gap-3" id="div">
+        <p class="text-[15px]  grid items-center">আপনি এখনো কোন Lesson Select করেন ন</p>
+        <h1 class="font-bold grid items-center pl-6">একটি Lesson Select করুন।</h1>
+      </div>
+
+
+
+    </section>
+
+
+    <section class="container mx-auto" id="faq-section"><!--FQA -->
+
+      <h1 class="flex items-center justify-center font-bold text-3xl mt-60 mb-20"><span
+          class="text-[#00BCFF] ">Frequently</span> Asked Questions</h1>
+
+
+      <!-- qe -->
+      <div class="mb-36">
+
+        <div class="collapse collapse-plus bg-base-200 mb-4">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">1. How can I start learning English on this website?</div>
+          <div class="collapse-content">
+            <p>You can start by exploring lessons, practice exercises, and interactive activities available on the
+              website</p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200 mb-4">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">2. Is this website free to use?</div>
+          <div class="collapse-content">
+            <p>Yes, this website is free to use.</p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200 mb-4">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">3. Do I need to create an account?</div>
+          <div class="collapse-content">
+            <p>It depends on the platform you're using. Some require an account, while others offer access without one
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200 mb-4">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">4. How can I build my English vocabulary?</div>
+          <div class="collapse-content">
+            <p>Read regularly, practice with flashcards, use vocabulary apps (like Anki or Quizlet), watch English
+              content, and speak or write daily.</p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200 mb-4">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">5. Do you offer certificates for completed courses?</div>
+          <div class="collapse-content">
+            <p>No, I don't offer certificates, but many online learning platforms do, like Coursera, Udemy, and
+              freeCodeCamp.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer id="footer-section">
+    <section class="flex justify-between border-t-2 border-t-red-300 border-opacity-20">
+
+      <div class="mb-20 mt-16">
+        <section class="flex items-center py-3 pl-20">
+          <h1 class="font-bold">English</h1>
+          <img src="assets/logo.png" alt="">
+          <h1 class="font-bold">জানালা</h1>
+        </section>
+        <h1 class="ml-20 font-bold">ইংরেজি শিখুন সহজে</h1>
+        <p class="ml-20">Providing ED-Tech Applications since 2025</p>
+      </div>
+
+
+      <div class="mt-24 mr-36">
+        <p class="py-3 pl-2">Follow us</p>
+        <div class="flex gap-4">
+          <img src="assets/fb-thumb.png" alt="">
+          <img src="assets/youtube-thumb.png" alt="">
+          <img src="assets/instagram-thumb.png" alt="">
+        </div>
+      </div>
+
+    </section>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>
